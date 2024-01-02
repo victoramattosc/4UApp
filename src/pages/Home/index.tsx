@@ -28,7 +28,7 @@ export default function Home() {
         {/* Added this scroll view to enable scrolling when list gets longer than the page */}
         <View style={styles.toolbar}>
             <Image source={icon} style={styles.icon}/>
-            <Text style={{fontFamily: 'PRegular', marginLeft: 8}}>Olá, </Text><Text style={{fontFamily: 'PBold'}}>Victor Carbelotti</Text>
+            <Text style={{fontFamily: 'PRegular', marginLeft: 8}}>Olá, </Text><TextInput style={{fontFamily: 'PBold'}}>Usuário</TextInput>
         </View>
         <ScrollView
           contentContainerStyle={{

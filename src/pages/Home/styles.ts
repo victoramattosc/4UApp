@@ -40,7 +40,7 @@ export const styles = StyleSheet.create({
         backgroundColor: '#cfeceb',
         marginTop: 30,
         borderRadius: 20,
-        paddingHorizontal: 30
+        paddingHorizontal: 30,
       },
       writeTaskWrapper: {
         width: '100%',
