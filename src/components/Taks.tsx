@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
-const Task = (props) => {
+const Task = (props:any) => {
 
   return (
     <View style={styles.item}>

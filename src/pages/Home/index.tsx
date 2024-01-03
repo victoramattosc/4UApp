@@ -8,8 +8,8 @@ import Feather from "@expo/vector-icons/Feather";
 import icon from '../../../assets/img/icon.jpg'
 
 export default function Home() {
-    const [task, setTask] = useState('');
-    const [taskItems, setTaskItems] = useState([]);
+    const [task, setTask]:any = useState('');
+    const [taskItems, setTaskItems]:any = useState([]);
   
     const handleAddTask = () => {
       Keyboard.dismiss();
@@ -43,7 +43,7 @@ export default function Home() {
           <View style={styles.items}>
             {/* This is where the tasks will go! */}
             {
-              taskItems.map((item, index) => {
+              taskItems.map((item:any, index:any) => {
                 return (
                   <TouchableOpacity key={index}  onPress={() => completeTask(index)}>
                     <Task text={item} /> 
@@ -59,7 +59,6 @@ export default function Home() {
         {/* Write a task */}
         {/* Uses a keyboard avoiding view which ensures the keyboard does not cover the items on screen */}
         <KeyboardAvoidingView 
-          behavior={Platform.OS === "ios" ? "padding" : "height"}
           style={styles.writeTaskWrapper}
         >
           <TextInput style={styles.input} placeholder={'O que há de novo?'} value={task} onChangeText={text => setTask(text)} />
